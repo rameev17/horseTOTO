@@ -1,0 +1,90 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+body a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+}
+
+ .intro__inner{
+     text-align: center;
+     padding: 64px;
+     color: white;
+     background-color: white;
+
+ } 
+ .intro__inner__title{
+    text-transform: uppercase;
+    font-size: 40px;
+    color: white;
+    font-size: 30px;
+} 
+
+.intro__inner__terms{
+    text-align: center;
+    
+}
+.intro__inner__terms__sub{
+    background-color: #f3f3f7;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color: rgb(65, 63, 63);
+    padding: 24px;
+    margin: 0 16px 0 0;
+    text-align: left;
+    font-size: 15px;
+    height: auto;
+}
+.intro__inner__terms__sub h5{
+    font-size: 15px;
+}
+.intro__inner__terms__text{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+    background-color: white;
+    color: black;
+    padding: 24px;
+
+    font-size: 15px;
+
+
+}
+.intro__inner__terms__text p{
+    text-align: left;
+}
+.intro__inner__terms__sub__title{
+    text-align: left;
+    padding: 16px;
+}
+.intro__inner__terms__sub__title a{
+    text-decoration: none;
+}
+.intro__inner__terms__sub__title{
+    transition: color linear 0.3s;
+    transition:  linear 0.3s;
+    
+}
+.intro__inner__terms__sub__title a{
+    transition: color linear 0.3s;
+    transition:  linear 0.3s;
+    
+}
+.active, .intro__inner__terms__sub__title:hover {
+    background-color:white;
+    color: #7dab30;
+  }
+  .active, .intro__inner__terms__sub__title:hover a {
+    background-color:white;
+    color: #7dab30;
+  }
+  .active a{
+    background-color:white;
+    color: #7dab30;
+  }
+.example{
+    border: 1px solid #0c314d;
+    color: #0c314d;
+    padding: 8px;
+}

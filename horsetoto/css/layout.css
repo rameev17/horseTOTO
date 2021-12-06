@@ -1,0 +1,138 @@
+/************************************************************************
+ * 설명       :   기본 스타일시트
+ * 작성자     :   조주미
+ * 작성일     :   2021. 10. 08
+ * 최종수정일 :   2021. 10. 08
+ * 파일명     :   laytou.css
+************************************************************************/
+
+@charset "utf-8";
+
+/* css reset */
+body, input, textarea, select, button, table{margin:0; font-size:15px; font-family:'Nunito Sans' , 'Noto Sans KR' , Dotum, Helvetica, AppleGothic, Sans-serif; color:#444}
+body, h1, h2, h3, h4, h5, dl, dt, dd, ul, li, ol, th, td, p, form, fieldset, legend, button { margin: 0; padding: 0; }
+
+img, fieldset{border:0 none}
+dl, ul, ol, li {list-style: none outside none;}
+button{border:0 none; cursor:pointer; display: block;}
+table, th, td, div{border-collapse:collapse}
+
+a,img,input {outline:none; selector-dummy:expression(this.hideFocus=true);}
+
+li img { vertical-align:top;}
+td img { vertical-align:middle}
+
+a {text-decoration:none; color:#444;}
+a:hover, a:active, a:focus {color:#dd0000; text-decoration:none;}
+a.underline {text-decoration:none; color:#444;}
+a.underline:hover, a.underline:active, a.underline:focus {color:#dd0000; text-decoration:underline;}
+table a:link, table a:visited {color:#444;}
+table a:hover, table a:active {color:#000; text-decoration:underline;}
+address, caption, cite, code, dfn, em, var {font-style:normal;}
+
+input, select, textarea {vertical-align:middle; font-size:1em; line-height:130%}
+input, textarea, select { border-width:1px; border-style: solid; border-color:#ddd; background:#fff}
+
+input.text {padding:0px 2px; font-family:Verdana, '돋움', Dotum, Helvetica, AppleGothic, Sans-serif; color:#666}
+input.file {border:1px solid #ddd; padding:2px 6px;}
+input.check	{border:none; background:none;}
+input.radio	{border:0 none; background:none;}
+textarea.textarea {height:120px; padding:2px 0;}
+
+strong, .strong , b { font-weight: bold; }
+.btn {border:0 none; cursor:pointer}
+.blind, legend, caption {display:none !important}
+.cursor { cursor: pointer;}
+.clear {clear:both}
+img.imgC {vertical-align:middle !important}
+
+.floatL {float:left !important;}
+.floatR {float:right !important;}
+
+.mint {color:#00a99d}
+.w340 {width:340px;}
+.mgR10 {margin-right:10px !important}
+.mgL10 {margin-left:10px !important}
+.mgL40 {margin-left:40px !important}
+
+/* css layout */
+html{overflow:auto}
+body{background:#fff}
+#wrap {width:100%; position:relative; margin:0 auto; min-width:1280px;}
+
+
+#header, #mainVisual, #subVisual, #container, #foot{width:100%; position:relative;}
+.inner {width:1280px; margin:0 auto; position:relative;}
+
+/*header*/
+#wrap #header{
+	position: fixed; top:0; left: 0; right: 0; 
+	height:90px; z-index:90; background-color:#292929; }
+	#header	h1{width:340px; padding-top:20px; float:left;}
+
+/* GNB */
+#topmenu { display:inline-block;  }
+#topmenu > ul:after {display:block; content:""; clear:both;}
+#topmenu > ul a {display:block; color:#2d2f33;}
+#topmenu > ul > li {position:relative; display:inline-block; vertical-align:top;  }
+#topmenu > ul > li > a {position:relative; display:block; font-size:14px; color:#787b87; height:90px; line-height:100px; font-weight:800; }
+#topmenu > ul > li + li { margin-left:20px;  }
+#topmenu ul li.m_active > a, 
+#topmenu ul li > a.on {color:#5a83fd;}
+
+#topmenu ul li > a:after,
+#topmenu ul li a:after { content:''; position:absolute; left:50%; bottom:0; width:0; height:3px; background:#5a83fd;
+transform:translateX(-50%); -webkit-transform:translateX(-50%); -ms-transform:translateX(-50%);-moz-transform:translateX(-50%); -o-transform:translateX(-50%);
+transition:all .3s ease; -webkit-transition:all .3s ease; -ms-transition:all .3s ease; -moz-transition:all .3s ease; -o-transition:all .3s ease;}
+
+#topmenu ul li.m_active > a:after,
+#topmenu ul li a.on:after {  width:100%; }
+
+#topmenu .subbox { display:none;  position:absolute; left:50%; top:80px; width:165px; border-radius:5px;
+transform:translateX(-50%); -webkit-transform:translateX(-50%); -ms-transform:translateX(-50%);-moz-transform:translateX(-50%); -o-transform:translateX(-50%);}
+#topmenu .subbox > div { text-align:left; background:#fff; padding:10px 0; border:1px solid #f1f1f1; border-top-width:0;  box-shadow:5px 3px 10px 0 rgba(0,0,0,0.1);border-radius:5px;}
+#topmenu .subbox > div p { padding:5px 15px; }
+#topmenu .subbox > div p a { display:block; font-size:14px; color:#6d7384;font-weight:700;  }
+#topmenu .subbox > div p a:hover { text-decoration:underline; color:#5a83fd;  }
+
+
+.join-box {position:relative; display:inline-block; vertical-align:top; height:60px;margin-left:37px; box-sizing:border-box; padding-top:30px; }
+.join-box > a { display:block;height:25px; line-height:25px; border:1px solid #fff; box-sizing:border-box; padding-left:30px; padding-right:10px;  font-size:14px; color:#222; font-weight:500; text-align:right; border-radius:5px; background-color:#fff;}
+.join-box > a i { display:inline-block; width:15px; height:12px;  }
+
+.login-box {position:relative; display:inline-block; vertical-align:top; height:100px;margin-left:10px; box-sizing:border-box; padding-top:30px; }
+.login-box > a { display:block; height:25px; line-height:25px; border:1px solid #5a83fd; box-sizing:border-box; padding-left:20px; padding-right:10px;  font-size:14px; color:#fff; font-weight:500; text-align:right; border-radius:5px; background-color:#5a83fd;}
+.login-box > a i { display:inline-block; width:15px; height:12px;  }
+
+.lang-box {position:relative; display:inline-block; vertical-align:top; height:100px;margin-left:10px; box-sizing:border-box; padding-top:30px; }
+.lang-box > a { display:block; height:25px; line-height:25px; border:1px solid #5c5f6a; box-sizing:border-box; padding-left:20px; padding-right:10px;  font-size:14px; color:#fff; font-weight:500; text-align:left; border-radius:5px; width:80px;}
+.lang-box > a i { display:inline-block; width:15px; height:12px; background:url("../images/icon_arrow_down_min.png") no-repeat right 5px }
+.lang-box > div {display:none;   position:absolute; left:0; top:; width:100%; box-sizing:border-box; border:1px solid #ccc; border-top:0; padding:5px 0 2px; background:#fff; text-align:left; } 
+.lang-box > div a { display:block; font-size:14px; color:#666; padding:2px 0 2px 0; text-align:center;  }
+.lang-box > div a:hover {  color:#253a8b; font-weight:600;}
+
+
+/*contents*/
+
+
+  #content {width:1280px; margin:0 auto; padding:0 0 0 0; overflow:hidden;}
+  #content img {margin:0;}
+ 
+  
+/* login */
+  body.loginWrap {min-height:100%; background-color:#bcbfc6;}
+  .loginWrap .header {background-color:#3c4459; height:150px;}
+  .loginWrap .header h1 {padding-top:50px;}
+  .container {background-color:#fff; overflow:hidden;}
+  .login {background-color:#e5e6ea; width:442px; height:165px; padding:50px 130px 70px 130px; margin:100px auto; }
+  .login .login_t {margin-bottom:30px;}
+  .login form {width:440px; margin:0 auto; padding-bottom:30px; font-size:12px; position:relative;}
+  .login .btn_login {width:109px; height:69px; background-color:transparent; position:absolute; right:0; top:0; }
+  .login input.text {border:1px solid #b8c0c3; width:230px; padding:6px 10px; height:16px; float:left; color:#222}
+  .login .inputArea { width:325px; height:32px; padding:0; margin:0 0 8px; position:relative; }
+  .login .inputArea span {float:left; padding:6px 0; margin-right:15px; display:inline-block; width:50px; }
+  .copy {background-color:#bcbfc6; padding:50px 0; height:100%; font-size:12px; color:#5e5a5a; font-family:'Arial'; text-align:center;}
+
+
+/*foot*/
+#footer {padding:0; background-color:#131313; color:#5e5a5a; font-family:'Century Gothic'; text-align:center;}

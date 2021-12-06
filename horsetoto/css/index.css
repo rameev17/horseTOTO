@@ -1,0 +1,233 @@
+
+.intro{
+
+    padding: 12% 0;
+    background-color: whitesmoke;
+    
+}
+.intro__inner{
+    background-color: whitesmoke;
+}
+.intro__inner__content__left{
+    background-color: #292929;
+    border-radius: 8px;
+}
+.intro__inner__content__left__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 32px 16px 32px;
+}
+.intro__inner__content__left__body__card{
+    background-color: #3c3c3c;
+    margin: 32px;
+    border-radius: 8px;
+}
+.intro__inner__content__left__header__title{
+    font-size: 19px;
+}
+.intro__inner__content__left__header__subtitle{
+    font-size: 18px;
+    color:#FECB00;
+}
+.intro__inner__content__left__body__card__text__title h5{
+    text-align: left;
+    padding: 16px 16px 0;
+    font-size: 15px;
+}
+.intro__inner__content__left__body__card__text__subtitle p{
+    text-align: left;
+    color: whitesmoke;
+    padding:  0 0 8px 16px;
+    font-size: 10px;
+    
+}
+.intro__inner__content__left__body__card__body__desc{
+    margin: 0 12px;
+    padding: 4px;
+    display: flex;
+    justify-content: left;
+    background-color: #7c7c7c;
+    border-radius: 8px;
+    height: 45px;
+}
+.intro__inner__content__left__body__card__body__img{
+    width: 36px;
+    height: 36px;
+    margin:  0 8px 0 0px;
+}
+.intro__inner__content__left__body__card__body__text{
+    text-align: left;
+    
+}
+.intro__inner__content__left__body__card__body__text__title{
+    font-size: 12px;
+}
+.intro__inner__content__left__body__card__body__text__subtitle{
+    font-size: 10px;
+    color:#FECB00;
+}
+.intro__inner__content__left__body__card__body__calculator{
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 8px;
+}
+.intro__inner__content__left__body__card__body__calculator__win{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 4px 0 0;
+    margin:  0 12px;
+    font-size: 12px;
+}
+.coef p{
+    display: inline-flex;
+    padding: 0 4px;
+
+}
+.intro__inner__content__left__body__card__footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    
+}
+.intro__inner__content__left__body__card__footer h5{
+    font-size: 15px;
+}
+.intro__inner__content__left__body__card__footer__text h5{
+    font-weight: 400;
+}
+.intro__inner__content__left__body__card__footer__amount{
+    color:#FECB00;
+}
+.intro__inner__content__right__table{
+    color: black;
+    text-align: left;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 11px;
+    border-radius: 8px;
+    border: 1px solid #EEEEEE;
+
+}
+
+.intro__inner__content__right__table__header{
+
+    border-bottom: 1px solid #EEEEEE;
+    border-radius: 4px;
+    background-color: white;
+}
+.intro__inner__content__right__table__header__title{
+    padding: 16px ;
+    border-bottom: 1px solid #EEEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+}
+.intro__inner__content__right__table__header__title h3{
+    font-size: 16px;
+}
+.intro__inner__content__right__table__time{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 16px;
+    color: #292929;
+    overflow: scroll;
+    overflow-y:hidden;
+    
+}
+.intro__inner__content__right__table__time_time{
+    transition: color linear 0.2s;
+   
+}
+.intro__inner__content__right__table__time h4{
+    font-size: 14px;
+    cursor: pointer;
+}
+.intro__inner__content__right__table__time h4{
+    margin: 0 36px 0 0;
+}
+.active1 {
+border-bottom: 4px solid #FECB00 ;
+}
+.intro__inner__content__right__table__body__header{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 8px 0 0 8px;
+    border-bottom: 1px solid #EEEEEE;
+}
+.intro__inner__content__right__table__body{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: scroll;
+    overflow-y:hidden;
+    
+
+}
+.intro__inner__content__right__table__body__cards{
+    margin: 8px  ;
+    border: 1px solid #EEEEEE;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+.intro__inner__content__right__table__body__header__image{
+    width: 32px;
+    height: 32px;
+    margin: 0 8px;
+}
+.intro__inner__content__right__table__body__header__time{
+    margin: 0 16px 0 0;
+}
+
+.intro__inner__content__right__table__body__body__card{
+    display: flex;
+    padding: 8px 0 0 8px;
+    font-size: 12px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #EEEEEE;
+    width: 320px;
+}
+.intro__inner__content__right__table__body__body__image{
+    width: 48px;
+    height: 48px;
+    margin: 0 8px;
+}
+.intro__inner__content__right__table__body__body__horsename{
+    font-size: 14px;
+
+}
+.intro__inner__content__right__table__body__body__Jokeyname{
+    font-size: 10px;
+}
+.intro__inner__content__right__table__body__body__price__button{
+    width: 48px;
+    height: 48px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 16px 0 0;
+    background-color: white;
+    border-radius: 100%;
+    border: 2px solid #FECB00;
+    cursor: pointer;
+}
+.intro__inner__content__right__table__body__footer{
+    display: flex;
+    margin: 0 0 0 8px;
+    padding: 8px 8px 0;
+    font-size: 12px;
+    font-weight: 500;
+    align-items: center;
+    justify-content:space-between;
+
+}
+.intro__inner__content__right__table__body__footer__text p{
+    color: #FECB00;
+}
